@@ -21,5 +21,6 @@ h2 {
   }
   h2 {
     position: fixed;
+    left: 5rem;
   }
 }
