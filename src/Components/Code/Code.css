@@ -40,5 +40,7 @@ code {
   }
   code {
     color: #fff;
+    position: relative;
+    left: 8rem;
   }
 }

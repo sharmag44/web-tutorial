@@ -1,3 +1,24 @@
 .ES6:only-child {
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 1300px) {
+.Code__all{
+  text-align: left;
+    position: relative;
+    left: 15rem;
+    padding: 5px 0;
+    width: 100%;
+
+
+}
+
+}
+@media screen and (max-width: 750px) {
+  .Code__all {
+    text-align: left;
+    position: relative;
+    left: 15rem;
+    padding: 5px 0;
+    width: 100%;
+  }
+}

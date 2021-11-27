@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap";
 import Code from "../Code/Code";
 import Text from "../Text/Text";
-import MainText from "../MainText/MainText";
 import Home from "../Home/Home";
 export default function Doc(props) {
   return (
@@ -23,7 +22,11 @@ export default function Doc(props) {
       <div>
         <h2 style={{ position: "relative", left: "20rem" }}>Creating an App</h2>
       </div>
-      <MainText lg="You’ll need to have Node >= 10 on your local development machine (but it’s not required on the server). You can use nvm (macOS/Linux) or nvm-windows to switch Node versions between different projects." />
+      <p>
+        You’ll need to have Node &gt;= 10 on your local development machine (but
+        it’s not required on the server). You can use nvm (macOS/Linux) or
+        nvm-windows to switch Node versions between different projects.
+      </p>
       <Text text="To create a new app or project, you may choose one of the following methods:" />
 
       <div className="Code__all">

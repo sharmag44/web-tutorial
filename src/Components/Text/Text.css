@@ -5,3 +5,9 @@
 .Text {
   position: relative;
 }
+@media screen and(max-width:750px) {
+  .MainText__p {
+    position: relative;
+    left: 0;
+  }
+}

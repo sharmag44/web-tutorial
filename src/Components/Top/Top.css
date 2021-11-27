@@ -1,14 +1,25 @@
-.Top__logo {
+.Top__img {
   position: fixed;
   left: 0;
   width: 60px;
   border-radius: 17px;
   padding: 0 6px;
-  z-index: 1;
 }
 .Top {
   position: fixed;
   padding: 0 1rem 0 0;
-  border-bottom: 3px solid #fafafa;
   z-index: 2;
+}
+h2 {
+  position: fixed;
+  left: 5rem;
+}
+@media screen and (max-width: 750px) {
+  .Top__logo {
+    position: fixed;
+    left: 100px;
+  }
+  h2 {
+    position: fixed;
+  }
 }
