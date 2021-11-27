@@ -1,0 +1,44 @@
+code {
+  font-family: monospace;
+  color: #fff;
+  font-size: 1rem;
+  padding-left: 8px;
+}
+.Code {
+  padding: 10px 0;
+  background: #000000;
+  width: 60%;
+  margin: 0 auto;
+}
+.Code {
+  position: relative;
+  left: 2rem;
+}
+/* @media screen and(max-width: 1200px) {
+  .Code {
+    position: relative;
+    left: 7rem;
+  }
+}
+@media screen and(max-width: 1100px) {
+  .Code {
+    position: relative;
+    left: 10rem;
+  }
+}
+@media screen and(max-width: 800px) {
+  .Code {
+    position: relative;
+    left: 2rem;
+  }
+} */
+
+@media screen and(max-width: 700px) {
+  .Code {
+    max-width: 70%;
+    width: 60%;
+  }
+  code {
+    color: #fff;
+  }
+}
