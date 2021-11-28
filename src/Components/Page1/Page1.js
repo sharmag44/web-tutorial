@@ -24,7 +24,7 @@ export default function Doc(props) {
       </div>
       <p>
         You’ll need to have Node &gt;= 10 on your local development machine (but
-        it’s not required on the server). You can use nvm (macOS/Linux) or
+        it’s not required on the server). You can use nvm (macOS/Linux) ordddd
         nvm-windows to switch Node versions between different projects.
       </p>
       <Text text="To create a new app or project, you may choose one of the following methods:" />
