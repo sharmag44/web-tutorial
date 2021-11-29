@@ -4,6 +4,14 @@
 p {
   position: relative;
   left: 20rem;
+  max-width: 78%;
+  font-size: 1.2rem;
+}
+strong {
+  position: relative;
+  left: 20rem;
+  max-width: 70%;
+  word-wrap: break-word;
 }
 @media screen and(max-width:1300px) {
   .Home {

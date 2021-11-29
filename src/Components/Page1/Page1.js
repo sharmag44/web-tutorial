@@ -2,14 +2,10 @@ import "./Doc.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap";
 import Code from "../Code/Code";
-import Home from "../Home/Home";
 export default function Doc(props) {
   return (
     <div className="Page1">
-      <Home />
-      <div className="Doc__title">
-        <h1>Getting Started</h1>
-      </div>
+      <h2 style={{ marginTop: "100px" }}>Getting Started</h2>
       <h3>Quick Start</h3>
       <div className="Code__all">
         <Code data="npx create-react-app my-app" />
@@ -24,7 +20,7 @@ export default function Doc(props) {
         create-react-app to ensure that npx always uses the latest version
       </h6>
       <div>
-        <h2 style={{ position: "relative", left: "20rem" }}>Creating an App</h2>
+        <h2>Creating an App</h2>
       </div>
       <p>
         You’ll need to have Node &gt;= 10 on your local development machine (but

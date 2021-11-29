@@ -16,7 +16,9 @@ li {
   border-color: rgb(8, 8, 8);
   z-index: 1;
   overflow-x: scroll;
+  background-color: #fff;
 }
+
 @media screen and (max-width: 1500px) {
   #navbar {
     position: fixed;

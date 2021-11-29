@@ -11,6 +11,12 @@ export default function Home() {
         React can be used as a base in the development of single-page or mobile
         applications
       </p>
+      <p>The features that make React powerful and beautiful are:</p>
+      <ol>
+        <li><strong>It uses the virtual DOM concept instead of the real DOM.</strong></li>
+        <li><strong>Code readability because of JSX. The use of JSX makes you feel like you’re writing web apps.</strong></li>
+        <li><strong>It also uses SSR (SSR helps in SEO).</strong></li>
+      </ol>
     </div>
   );
 }
