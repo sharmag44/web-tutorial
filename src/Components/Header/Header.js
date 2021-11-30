@@ -26,17 +26,39 @@ export default function Header() {
               <li>
                 <Link to="/jsx">JSX</Link>
               </li>
-              <li><Link to="/component">Components</Link></li>
-              <li><Link to="/class">Class</Link></li>
-              <li><Link to="/props">Props</Link></li>
-              <li><Link to="/events">Events</Link></li>
-              <li><Link to="/condition">Conditionals</Link></li>
-              <li><Link to="/list">Lists</Link></li>
-              <li><Link to="/hook">Hooks</Link></li>
-              <li><Link to="/form">Forms</Link></li>
-              <li><Link to="/router">Router</Link></li>
-              <li><Link to="/memo">Memo</Link></li>
-              <li><Link to="/style">Styling</Link></li>
+              <li>
+                <Link to="/component">Components</Link>
+              </li>
+              <li>
+                <Link to="/class">Class</Link>
+              </li>
+              <li>
+                <Link to="/props">Props</Link>
+              </li>
+              <li>
+                <Link to="/events">Events</Link>
+              </li>
+              <li>
+                <Link to="/condition">Conditionals</Link>
+              </li>
+              <li>
+                <Link to="/list">Lists</Link>
+              </li>
+              <li>
+                <Link to="/hook">Hooks</Link>
+              </li>
+              <li>
+                <Link to="/form">Forms</Link>
+              </li>
+              <li>
+                <Link to="/router">Router</Link>
+              </li>
+              <li>
+                <Link to="/memo">Memo</Link>
+              </li>
+              <li>
+                <Link to="/style">Styling</Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -44,5 +66,3 @@ export default function Header() {
     </div>
   );
 }
-
-
