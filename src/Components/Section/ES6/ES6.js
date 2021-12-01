@@ -4,7 +4,7 @@ import "./ES6.css";
 export default function ES6() {
   return (
     <div className="ES6">
-      <h2 style={{ marginTop: "100px" }}>What is ES6 ?</h2>
+      <h2>What is ES6 ?</h2>
       <p style={{ margin: "5px" }}>
         ES6 or ECMAScript 2015 is the 6th version of the ECMAScript programming
         language. ECMAScript is the standardization of Javascript which was
