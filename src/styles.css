@@ -17,6 +17,7 @@ body {
 .Main {
   position: relative;
   max-width: 90%;
+  max-height: 80vh;
 }
 .App {
   word-wrap: break-word;

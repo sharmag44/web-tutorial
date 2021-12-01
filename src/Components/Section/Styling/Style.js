@@ -22,5 +22,35 @@ export default function Style() {
       <Code data=");" />
       <Code data="}" />
     </div>
+
+    <h3>camelCased Property Names</h3>
+
+    <p>Since the inline CSS is written in a JavaScript object, properties with hyphen separators, like background-color, must be written with camel case syntax:</p>
+    <p>Use backgroundColor instead of background-color:</p>
+    <div className="Code__all">
+      <Code data="const Header = () => {" />
+      <Code data=" return (" />
+      <Code data="<>" />
+      <Code data="<h1 style={{backgroundColor: 'lightblue'}}>Hello Style!</h1>" />
+      <Code data="<p>Add a little style!</p>" />
+      <Code data=" </>" />
+      <Code data=");" />
+      <Code data="}" />
+    </div>
+
+    <h3>JavaScript Object</h3>
+    <div className="Code__all">
+      <Code data="const Header = () => {" />
+      <Code data=" const myStyle = {" />
+      <Code data="backgroundColor:'Dodgerblue" />
+      <Code data="padding:'10px" />
+      <Code data="fontFamily:'Sanserif }" />
+      <Code data=" return(" />
+      <Code data="<>" />
+      <Code data="<h1 style={myStyle}>Hello Style!</h1>" />
+      <Code data="<p>Add a little style!</p>" />
+      <Code data=");" />
+      <Code data="}" />
+    </div>
   </div>
 }

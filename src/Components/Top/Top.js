@@ -3,6 +3,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import {} from "react-router-bootstrap";
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 export default function Top() {
   return (
     <div className="Top">
@@ -16,7 +17,9 @@ export default function Top() {
             aria-hidden
           />
         </div>
-        <h1>React Tutorial</h1>
+        <Link to="/Home">
+          <h1>React Tutorial</h1>
+        </Link>
       </Container>
     </div>
   );
