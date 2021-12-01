@@ -1,9 +1,10 @@
 import React from "react";
-
+import "./RenderHTML.css";
+import Code from "../../Code/Code";
 function RenderHTML() {
   return (
     <div className="RenderHTML">
-      <h2 style={{ marginTop: "100px" }}>React Render HTML</h2>
+      <h2>React Render HTML</h2>
       <p>
         React's goal is in many ways to render HTML in a web page. React renders
         HTML to the web page by using a function called{" "}
@@ -21,9 +22,7 @@ function RenderHTML() {
         notice a single div tag in the body of this file.This is where our React
         application will be rendered.
       </p>
-      <code>
-        ReactDOM.render(<p>Hello</p>, document.getElementById('root'));
-      </code>
+      <Code data="ReactDOM.render(<p>Hello</p>, document.getElementById('root')):" />
       <p>The result is displayed in the id='root' element:</p>
     </div>
   );

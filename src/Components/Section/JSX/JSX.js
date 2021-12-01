@@ -1,10 +1,10 @@
 import React from "react";
 import Code from "../../Code/Code";
-
+import "./JSX.css";
 function JSX() {
   return (
     <div className="JSX">
-      <h2 style={{ marginTop: "100px" }}>React JSX</h2>
+      <h2>React JSX</h2>
       <h3>What is JSX?</h3>
       <p>
         JSX stands for JavaScript XML. It is simply a syntax extension of

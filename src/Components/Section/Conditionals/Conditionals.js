@@ -1,9 +1,10 @@
 import React from "react";
 import Code from "../../Code/Code";
+import "./Conditionals.css";
 function Conditionals() {
   return (
-    <div>
-      <h2 style={{ marginTop: "100px" }}>React Conditionals Rendering</h2>
+    <div className="Conditionals">
+      <h2>React Conditionals Rendering</h2>
       <p>
         In React, you can conditionally render components. There are several
         ways to do this.

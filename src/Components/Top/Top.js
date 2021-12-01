@@ -17,7 +17,7 @@ export default function Top() {
             aria-hidden
           />
         </div>
-        <Link to="/Home">
+        <Link to="/">
           <h1>React Tutorial</h1>
         </Link>
       </Container>

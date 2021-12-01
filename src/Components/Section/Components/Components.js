@@ -1,9 +1,11 @@
 import React from "react";
 import Code from "../../Code/Code";
+import "bootstrap/dist/css/bootstrap.css";
+import "./Components.css";
 function Components() {
   return (
     <div className="Components">
-      <h3 style={{ marginTop: "100px" }}>React Components</h3>
+      <h3>React Components</h3>
       <p>
         Components are independent and reusable bits of code. They serve the
         same purpose as JavaScript functions, but work in isolation and return
@@ -11,7 +13,7 @@ function Components() {
         components, in this tutorial we will concentrate on Function components.
       </p>
 
-      <h6>
+      <h6 className="w-80">
         In older React code bases, you may find Class components primarily used.
         It is now suggested to use Function components along with Hooks, which
         were added in React 16.8. There is an optional section on Class

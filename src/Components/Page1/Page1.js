@@ -5,7 +5,7 @@ import Code from "../Code/Code";
 export default function Doc(props) {
   return (
     <div className="Page1">
-      <h2 style={{ marginTop: "100px" }}>Getting Started</h2>
+      <h2>Getting Started</h2>
       <h3>Quick Start</h3>
       <div className="Code__all">
         <Code data="npx create-react-app my-app" />
