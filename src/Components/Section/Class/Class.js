@@ -29,6 +29,13 @@ function Class() {
         <Code data="  }" />
         <Code data="    }" />
       </div>
+      <p>Now your React application has a component called Car, which returns a h2tag element.
+
+        To use this component in your application, use similar syntax as normal HTML:Car tag
+      </p>
+      <h5>Example</h5>
+      <p>Display the Car component in the "root" element:</p>
+      <Code data="ReactDOM.render(<Car />, document.getElementById('root'));" />
     </div>
   );
 }
