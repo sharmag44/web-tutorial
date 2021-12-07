@@ -21,11 +21,9 @@ export default function Router() {
 
         Within the src folder, we'll create a folder named pages with several files:</p>
       <p>src/pages</p>
-      <ul>
-        <li>Home.js</li>
-        <li>blogs.js</li>
-        <li>Contacts.js</li>
-      </ul>
+      <p>Home.js</p>
+      <p>Blogs.js</p>
+      <p>Contact.js</p>
 
       <h6>Home.js</h6>
       <div className="Code__all">
@@ -57,11 +55,28 @@ export default function Router() {
       <p>index.js</p>
       <div className="Code__all">
         <Code data="import ReactDOM from 'react-dom';" />
-        <Code data="import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';" />
+        <Code data="import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';" />
+        <Code data="import Home from './pages/Home';" />
+        <Code data="import Blogs from './pages/Blogs';" />
+        <Code data="import Contact from './pages/Contact';" />
         <Code data="" />
+        <Code data="export default function App() {" />
+        <Code data="return (" />
+        <Code data=" <Router>" />
+        <Code data="<div></div> <Link to='/>Home</Link></div>" />
+        <Code data="<div>
+        <Link to='/blogs'>Blog Articles</Link></div>" />
+        <Code data="<div><Link to='/contact'>Contact Me</Link></div>" />
+        <Code data="<hr/>" />
+        <Code data="<Routes>" />
+        <Code data="<Route path='/' element={<Home/>}" />
+        <Code data="<Route path='/blogs' element={<Blogs/>}" />
+        <Code data="<Route path='/contact' element={<Contact/>}" />
+        <Code data="</Routes>" />
+        <Code data="   );" />
+        <Code data="}" />
         <Code data="" />
-        <Code data="" />
-        <Code data="" />
+        <Code data="ReactDOM.render(<App/>,document.getElementById('root'));" />
 
       </div>
     </div>

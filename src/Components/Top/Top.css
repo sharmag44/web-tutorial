@@ -13,7 +13,6 @@ Link {
 .Top__img {
   position: fixed;
   top: 10px;
-  left: 0;
   width: 60px;
   border-radius: 17px;
   padding: 0 6px;
@@ -29,12 +28,4 @@ Link {
 }
 
 @media screen and (max-width: 750px) {
-  .Top__logo {
-    position: fixed;
-    left: 100px;
-  }
-  h2 {
-    position: fixed;
-    left: 5rem;
-  }
 }

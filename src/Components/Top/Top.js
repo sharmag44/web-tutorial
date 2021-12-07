@@ -13,7 +13,7 @@ export default function Top() {
               class="d-inline-block align-top Top__img"
               alt=""
             />
-            <h4 className="w-100 mt-1 display-5">React Tutorial</h4>
+            <h4 className="w-100 mt-1 display-5 Top-header">React Tutorial</h4>
           </Link>
         </nav>
       </div>
