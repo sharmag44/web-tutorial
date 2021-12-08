@@ -1,12 +1,15 @@
 import React from "react";
-import Code from "../../Code/Code"
+import Code from "../../Code/Code";
+import "./Props.css";
 function Props() {
   return (
-    <div>
+    <div className="Props">
       <h2>React Props</h2>
-      <p>Props are arguments passed into  React Components.</p>
-      <p>Props are  passed  to components via HTML attributes,
-        Props are Stand for Properties.</p>
+      <p>Props are arguments passed into React Components.</p>
+      <p>
+        Props are passed to components via HTML attributes, Props are Stand for
+        Properties.
+      </p>
 
       <h5>Example</h5>
       <Code data="const myelement = <Car brand='Ford'/>" />
@@ -21,7 +24,10 @@ function Props() {
       </div>
 
       <h5>Pass Data</h5>
-      <p>Props are also how you pass data from one component to another, as parameters.</p>
+      <p>
+        Props are also how you pass data from one component to another, as
+        parameters.
+      </p>
       <h5>Example</h5>
       <div className="Code__all">
         <Code data="function Car(props) {" />
@@ -38,7 +44,6 @@ function Props() {
         <Code data="}" />
         <Code data="ReactDOM.render(<Garage />, document.getElementById('root'));" />
       </div>
-
     </div>
   );
 }

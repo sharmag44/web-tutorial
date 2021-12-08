@@ -1,9 +1,9 @@
 import React from "react";
 import Code from "../../Code/Code";
-
+import "./Memo.css";
 export default function Memo() {
   return (
-    <div>
+    <div className="Memo">
       <h2>React Memo</h2>
       <p>
         Using memo will cause React to skip rendering a component if its props

@@ -15,14 +15,13 @@ code {
   left: 3rem;
 }
 
-@media screen and(max-width: 700px) {
+@media screen and(max-width: 788px) {
   .Code {
     max-width: 70%;
     width: 60%;
   }
   code {
-    color: #fff;
-    position: relative;
-    left: 8rem;
+    display: grid;
+    place-content: center;
   }
 }
