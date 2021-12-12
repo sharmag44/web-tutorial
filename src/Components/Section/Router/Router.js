@@ -1,6 +1,6 @@
 import React from "react";
 import "./Router.css";
-import Code from "../../Code/Code"
+import Code from "../../Code/Code";
 export default function Router() {
   return (
     <div className="Router">
@@ -14,12 +14,16 @@ export default function Router() {
         in the URL (/ for the home page, /about for the about page, etc.).
       </p>
       <h5>Add React Router</h5>
-      <Code data="npm i  react-router-dom" />
+      <div className="Code__all">
+        <Code data="npm i  react-router-dom" />
+      </div>
 
       <h5>Folder Structure</h5>
-      <p>To create an application with multiple page routes, let's first start with the file structure.
-
-        Within the src folder, we'll create a folder named pages with several files:</p>
+      <p>
+        To create an application with multiple page routes, let's first start
+        with the file structure. Within the src folder, we'll create a folder
+        named pages with several files:
+      </p>
       <p>src/pages</p>
       <p>Home.js</p>
       <p>Blogs.js</p>
@@ -64,8 +68,10 @@ export default function Router() {
         <Code data="return (" />
         <Code data=" <Router>" />
         <Code data="<div></div> <Link to='/>Home</Link></div>" />
-        <Code data="<div>
-        <Link to='/blogs'>Blog Articles</Link></div>" />
+        <Code
+          data="<div>
+        <Link to='/blogs'>Blog Articles</Link></div>"
+        />
         <Code data="<div><Link to='/contact'>Contact Me</Link></div>" />
         <Code data="<hr/>" />
         <Code data="<Routes>" />
@@ -77,7 +83,6 @@ export default function Router() {
         <Code data="}" />
         <Code data="" />
         <Code data="ReactDOM.render(<App/>,document.getElementById('root'));" />
-
       </div>
     </div>
   );

@@ -15,13 +15,12 @@ import Router from "./Section/Router/Router";
 import Memo from "./Section/Memo/Memo";
 import Style from "./Section/Styling/Style";
 import { Routes, Route } from "react-router-dom";
-import "../styles.css";
 
 export default function Main() {
   return (
     <div classsName="Main">
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/install" element={<Page1 />} />
         <Route path="/es6" element={<ES6 />} />
         <Route path="/render" element={<RenderHTML />} />
