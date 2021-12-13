@@ -15,28 +15,31 @@ import Router from "./Section/Router/Router";
 import Memo from "./Section/Memo/Memo";
 import Style from "./Section/Styling/Style";
 import { Routes, Route } from "react-router-dom";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Container } from "react-bootstrap";
 export default function Main() {
   return (
     <div classsName="Main">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/install" element={<Page1 />} />
-        <Route path="/es6" element={<ES6 />} />
-        <Route path="/render" element={<RenderHTML />} />
-        <Route path="/jsx" element={<JSX />} />
-        <Route path="/component" element={<Components />} />
-        <Route path="/class" element={<Class />} />
-        <Route path="/props" element={<Props />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/condition" element={<Conditionals />} />
-        <Route path="/list" element={<Lists />} />
-        <Route path="/hook" element={<Hooks />} />
-        <Route path="/form" element={<Form />} />
-        <Route path="/router" element={<Router />} />
-        <Route path="/memo" element={<Memo />} />
-        <Route path="/style" element={<Style />} />
-      </Routes>
+      <Container>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/install" element={<Page1 />} />
+          <Route path="/es6" element={<ES6 />} />
+          <Route path="/render" element={<RenderHTML />} />
+          <Route path="/jsx" element={<JSX />} />
+          <Route path="/component" element={<Components />} />
+          <Route path="/class" element={<Class />} />
+          <Route path="/props" element={<Props />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/condition" element={<Conditionals />} />
+          <Route path="/list" element={<Lists />} />
+          <Route path="/hook" element={<Hooks />} />
+          <Route path="/form" element={<Form />} />
+          <Route path="/router" element={<Router />} />
+          <Route path="/memo" element={<Memo />} />
+          <Route path="/style" element={<Style />} />
+        </Routes>
+      </Container>
     </div>
   );
 }

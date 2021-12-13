@@ -18,3 +18,16 @@ a {
 .Top-header {
   padding: 1rem;
 }
+
+#loading {
+  animation: rotation 25s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}

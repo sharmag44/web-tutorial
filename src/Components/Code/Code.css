@@ -1,0 +1,11 @@
+.Code {
+  background-color: #000;
+  width: 50vw;
+  padding: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  .Code {
+    width: 90vw;
+  }
+}
