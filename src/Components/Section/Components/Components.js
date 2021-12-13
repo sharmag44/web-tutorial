@@ -2,6 +2,8 @@ import React from "react";
 import Code from "../../Code/Code";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Components.css";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 function Components() {
   return (
     <div className="Components">
@@ -12,7 +14,6 @@ function Components() {
         HTML. Components come in two types, Class components and Function
         components, in this tutorial we will concentrate on Function components.
       </p>
-
       <h6 className="w-80">
         In older React code bases, you may find Class components primarily used.
         It is now suggested to use Function components along with Hooks, which
@@ -31,7 +32,6 @@ function Components() {
         component access to React.Component's functions. The component also
         requires a render() method, this method returns HTML.
       </p>
-
       <h5>Example</h5>
       <div className="Code__all">
         <Code data="class Car extends React.Component {" />
@@ -50,6 +50,15 @@ function Components() {
         <Code data="function Car() {{" />
         <Code data="return <h2>Hi, I am a Car!</h2>;" />
         <Code data="}" />
+      </div>
+      <div className="bottom_button">
+        <Button variant="success">
+          <Link to="/">❮ Previous</Link>
+        </Button>
+
+        <Button variant="success">
+          <Link to="/es6">Next ❯</Link>
+        </Button>
       </div>
     </div>
   );

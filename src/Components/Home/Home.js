@@ -1,5 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Home.css";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div className="Home">
@@ -42,6 +44,10 @@ export default function Home() {
           <strong>It also uses SSR (SSR helps in SEO).</strong>
         </li>
       </ol>
+
+      <Button variant="success">
+        <Link to="/install">Next</Link>
+      </Button>
     </div>
   );
 }

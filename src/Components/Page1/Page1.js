@@ -2,6 +2,8 @@ import "./Doc.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap";
 import Code from "../Code/Code";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 export default function Doc(props) {
   return (
     <div className="Page1">
@@ -12,7 +14,6 @@ export default function Doc(props) {
         <Code style={{ textAlign: "left" }} data="cd my-app" />
         <Code data="npm start" />
       </div>
-
       <h6>
         if you have previously installed create-react-app globally via npm
         install -g create-react-app, we recommend you uninstall the package
@@ -38,7 +39,6 @@ export default function Doc(props) {
         (npx comes with npm 5.2+ and higher, see instructions for older npm
         versions){" "}
       </h6>
-
       <h3>npm</h3>
       <div className="Code__all">
         <Code data="npm init react-app my-app" />
@@ -47,7 +47,6 @@ export default function Doc(props) {
       <div className="Code__all">
         <Code data="yarn create react-app my-app" />
       </div>
-
       <h6>installation is done, you can open your project folder:</h6>
       <div className="Code__all">
         <Code data="cd my-app" />
@@ -57,6 +56,15 @@ export default function Doc(props) {
         runs the app in development mode. Open http://localhost:3000 to view it
         in the browser
       </h6>
+      <div className="bottom_button">
+        <Button variant="success">
+          <Link to="/">❮ Previous</Link>
+        </Button>
+
+        <Button variant="success">
+          <Link to="/es6">Next ❯</Link>
+        </Button>
+      </div>
     </div>
   );
 }

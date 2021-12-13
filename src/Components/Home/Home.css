@@ -1,0 +1,8 @@
+button {
+  display: flex;
+  align-items: center;
+}
+a + Link {
+  text-decoration: none;
+  color: #fff;
+}

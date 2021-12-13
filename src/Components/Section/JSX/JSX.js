@@ -1,6 +1,8 @@
 import React from "react";
 import Code from "../../Code/Code";
 import "./JSX.css";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 function JSX() {
   return (
     <div className="JSX">
@@ -45,6 +47,16 @@ function JSX() {
       <h5>Example</h5>
       <div className="Coding__all">
         <Code data="const myelement = <h1 className=' myclass'>Hello World</h1>s;" />
+      </div>
+
+      <div className="bottom_button">
+        <Button variant="success">
+          <Link to="/render">❮ Previous</Link>
+        </Button>
+
+        <Button variant="success">
+          <Link to="/component">Next ❯</Link>
+        </Button>
       </div>
     </div>
   );

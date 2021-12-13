@@ -1,5 +1,7 @@
 import Code from "../../Code/Code";
 import "./ES6.css";
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function ES6() {
   return (
@@ -200,6 +202,15 @@ export default function ES6() {
       <h5>With Ternary Operator</h5>
       <div className="Code__all">
         <Code data="authenticated ? renderApp() : renderLogin();  " />
+      </div>
+      <div className="bottom_button">
+        <Button variant="success">
+          <Link to="/install">❮ Previous</Link>
+        </Button>
+
+        <Button variant="success">
+          <Link to="/render">Next ❯</Link>
+        </Button>
       </div>
     </div>
   );
