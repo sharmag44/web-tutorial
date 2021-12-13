@@ -1,6 +1,8 @@
 import React from "react";
 import "./Router.css";
 import Code from "../../Code/Code";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 export default function Router() {
   return (
     <div className="Router">
@@ -83,6 +85,14 @@ export default function Router() {
         <Code data="}" />
         <Code data="" />
         <Code data="ReactDOM.render(<App/>,document.getElementById('root'));" />
+      </div>
+      <div className="bottom_button">
+        <Button variant="success">
+          <Link to="/form">❮ Previous</Link>
+        </Button>
+        <Button variant="success">
+          <Link to="/memo">Next ❯</Link>
+        </Button>
       </div>
     </div>
   );

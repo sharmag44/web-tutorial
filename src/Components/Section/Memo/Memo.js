@@ -1,6 +1,8 @@
 import React from "react";
 import Code from "../../Code/Code";
 import "./Memo.css";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 export default function Memo() {
   return (
     <div className="Memo">
@@ -106,6 +108,14 @@ export default function Memo() {
         <Code data="};" />
         <Code data="" />
         <Code data="export default memo(Todos);" />
+      </div>
+      <div className="bottom_button">
+        <Button variant="success">
+          <Link to="/router">❮ Previous</Link>
+        </Button>
+        <Button variant="success">
+          <Link to="/style">Next ❯</Link>
+        </Button>
       </div>
     </div>
   );

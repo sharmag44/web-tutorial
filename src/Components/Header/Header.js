@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Navbar, Offcanvas, Nav } from "react-bootstrap";
 import Top from "../Top/Top";
 import { Link } from "react-router-dom";
-// import {} from "react-router-bootstrap";
 
 export default function Header() {
   return (

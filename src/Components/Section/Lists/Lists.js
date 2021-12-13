@@ -1,6 +1,8 @@
 import React from "react";
 import Code from "../../Code/Code";
 import "./Lists.css";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 function Lists() {
   return (
     <div className="Lists">
@@ -27,6 +29,14 @@ function Lists() {
         <Code data="}" />
         <Code data="" />
         <Code data="ReactDOM.render(<Garage />, document.getElementById('root'));" />
+      </div>
+      <div className="bottom_button">
+        <Button variant="success">
+          <Link to="/condition">❮ Previous</Link>
+        </Button>
+        <Button variant="success">
+          <Link to="/hook">Next ❯</Link>
+        </Button>
       </div>
     </div>
   );

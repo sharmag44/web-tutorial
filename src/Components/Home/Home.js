@@ -45,9 +45,11 @@ export default function Home() {
         </li>
       </ol>
 
-      <Button variant="success">
-        <Link to="/install">Next</Link>
-      </Button>
+      <div className="bottom-button">
+        <Button variant="success">
+          <Link to="/install">Next</Link>
+        </Button>
+      </div>
     </div>
   );
 }

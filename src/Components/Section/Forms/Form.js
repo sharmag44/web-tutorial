@@ -1,5 +1,7 @@
 import React from "react";
 import Code from "../../Code/Code";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 import "./Forms.css";
 export default function Form() {
   return (
@@ -22,18 +24,14 @@ export default function Form() {
         <Code data="}" />
         <Code data="ReactDOM.render(<MyForm />, document.getElementById('root'));" />
       </div>
-      <h4>Handling Forms
-      </h4>
-      <p>Handling forms is about how you handle the data when it changes value or gets submitted.
-
-        In HTML, form data is usually handled by the DOM.
-
-        In React, form data is usually handled by the components.
-
-        When the data is handled by the components, all the data is stored in the component state.
-
-        You can control changes by adding event handlers in the onChange attribute.
-
+      <h4>Handling Forms</h4>
+      <p>
+        Handling forms is about how you handle the data when it changes value or
+        gets submitted. In HTML, form data is usually handled by the DOM. In
+        React, form data is usually handled by the components. When the data is
+        handled by the components, all the data is stored in the component
+        state. You can control changes by adding event handlers in the onChange
+        attribute.
       </p>
       <h5>Example</h5>
       <div className="Code__all">
@@ -52,9 +50,15 @@ export default function Form() {
         <Code data="   )" />
         <Code data="}" />
         <Code data="ReactDOM.render(<MyForm />, document.getElementById('root'));" />
-
+      </div>
+      <div className="bottom_button">
+        <Button variant="success">
+          <Link to="/hook">❮ Previous</Link>
+        </Button>
+        <Button variant="success">
+          <Link to="/router">Next ❯</Link>
+        </Button>
       </div>
     </div>
   );
 }
-

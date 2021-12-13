@@ -1,8 +1,9 @@
-button {
-  display: flex;
-  align-items: center;
-}
 a + Link {
   text-decoration: none;
   color: #fff;
+}
+.bottom-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }

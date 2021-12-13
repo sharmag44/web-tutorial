@@ -17,3 +17,13 @@ a {
   text-decoration: none;
   color: #000;
 }
+p {
+  margin-left: 1.5em;
+}
+button > a {
+  text-decoration: none;
+  color: #fff;
+}
+.Code {
+  margin-left: 2.5 rem;
+}

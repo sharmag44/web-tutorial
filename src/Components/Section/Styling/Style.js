@@ -1,5 +1,7 @@
 import React from "react";
 import Code from "../../Code/Code";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 export default function Style() {
   return (
     <div className="Style">
@@ -68,6 +70,11 @@ export default function Style() {
         <Code data="<p>Add a little style!</p>" />
         <Code data=");" />
         <Code data="}" />
+      </div>
+      <div className="bottom_button">
+        <Button variant="success">
+          <Link to="/memo">❮ Previous</Link>
+        </Button>
       </div>
     </div>
   );

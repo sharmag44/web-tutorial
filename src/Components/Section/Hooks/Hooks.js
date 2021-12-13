@@ -1,6 +1,8 @@
 import React from "react";
 import Code from "../../Code/Code";
 import "./Hooks.css";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 function Hooks() {
   return (
     <div className="Hooks">
@@ -66,17 +68,24 @@ function Hooks() {
       </div>
 
       <h4>React useEffect Hooks</h4>
-      <p>The useEffect Hook allows you to perform side effects in your components.
-
-        Some examples of side effects are: fetching data, directly updating the DOM, and timers.</p>
-      <p>useEffect accepts two arguments. The second argument is optional. useEffect function, dependency</p>
+      <p>
+        The useEffect Hook allows you to perform side effects in your
+        components. Some examples of side effects are: fetching data, directly
+        updating the DOM, and timers.
+      </p>
+      <p>
+        useEffect accepts two arguments. The second argument is optional.
+        useEffect function, dependency
+      </p>
 
       <h5>Example</h5>
       <p>Use setTimeout() to count 1 second after initial render:</p>
       <div className="Code__all">
         <Code data="import { useState, useEffect } from ' react';" />
-        <Code data="import ReactDOM from ' react-dom';
-" />
+        <Code
+          data="import ReactDOM from ' react-dom';
+"
+        />
         <Code data="function Timer() {" />
         <Code data="const [count, setCount] = useState(0);" />
         <Code data="" />
@@ -85,17 +94,25 @@ function Hooks() {
         <Code data="setCount((count) => count + 1);" />
         <Code data="}, 1000);" />
         <Code data=" });" />
-        <Code data="return <h1>I've rendered {count} times!</h1>;
-" />
+        <Code
+          data="return <h1>I've rendered {count} times!</h1>;
+"
+        />
         <Code data="  }" />
         <Code data="" />
         <Code data="ReactDOM.render(<Timer />, document.getElementById('root'));" />
       </div>
       <p>But wait!! I keeps counting even though it should only count once!</p>
-      <p>useEffect runs on every render. That means that when the count changes, a render happens, which then triggers another effect.</p>
-      <p>This is not what we want. There are several ways to control when side effects run.
-
-        We should always include the second parameter which accepts an array. We can optionally pass dependencies to useEffect in this array.</p>
+      <p>
+        useEffect runs on every render. That means that when the count changes,
+        a render happens, which then triggers another effect.
+      </p>
+      <p>
+        This is not what we want. There are several ways to control when side
+        effects run. We should always include the second parameter which accepts
+        an array. We can optionally pass dependencies to useEffect in this
+        array.
+      </p>
       <h5>1. No dependency passed:</h5>
       <div className="Code__all">
         <Code data="useEffect(() => {" />
@@ -116,8 +133,10 @@ function Hooks() {
       <h5>Example</h5>
       <div className="Code__all">
         <Code data="import { useState, useEffect } from ' react';" />
-        <Code data="import ReactDOM from ' react-dom';
-" />
+        <Code
+          data="import ReactDOM from ' react-dom';
+"
+        />
         <Code data="function Counter() {" />
         <Code data="const [count, setCount] = useState(0);" />
         <Code data="const [calculation, setCalculation] = useState(0);" />
@@ -136,16 +155,30 @@ function Hooks() {
       </div>
 
       <h5>React useContext Hook</h5>
-      <p>React Context is a way to manage state globally.
-
-        It can be used together with the useState Hook to share state between deeply nested components more easily than with useState alone.</p>
+      <p>
+        React Context is a way to manage state globally. It can be used together
+        with the useState Hook to share state between deeply nested components
+        more easily than with useState alone.
+      </p>
       <h6>The Problem</h6>
-      <p>State should be held by the highest parent component in the stack that requires access to the state.
+      <p>
+        State should be held by the highest parent component in the stack that
+        requires access to the state. To illustrate, we have many nested
+        components. The component at the top and bottom of the stack need access
+        to the state. To do this without Context, we will need to pass the state
+        as "props" through each nested component. This is called "prop
+        drilling".
+      </p>
 
-        To illustrate, we have many nested components. The component at the top and bottom of the stack need access to the state.
-
-        To do this without Context, we will need to pass the state as "props" through each nested component. This is called "prop drilling".</p>
-    </div >
+      <div className="bottom_button">
+        <Button variant="success">
+          <Link to="/list">❮ Previous</Link>
+        </Button>
+        <Button variant="success">
+          <Link to="/form">Next ❯</Link>
+        </Button>
+      </div>
+    </div>
   );
 }
 

@@ -53,11 +53,11 @@ function Components() {
       </div>
       <div className="bottom_button">
         <Button variant="success">
-          <Link to="/">❮ Previous</Link>
+          <Link to="/jsx">❮ Previous</Link>
         </Button>
 
         <Button variant="success">
-          <Link to="/es6">Next ❯</Link>
+          <Link to="/class">Next ❯</Link>
         </Button>
       </div>
     </div>

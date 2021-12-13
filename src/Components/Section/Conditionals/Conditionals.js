@@ -1,6 +1,8 @@
 import React from "react";
 import Code from "../../Code/Code";
 import "./Conditionals.css";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 function Conditionals() {
   return (
     <div className="Conditionals">
@@ -60,6 +62,14 @@ function Conditionals() {
         <Code data=" <Goal isGoal={false} />," />
         <Code data="document.getElementById('root')" />
         <Code data=");" />
+      </div>
+      <div className="bottom_button">
+        <Button variant="success">
+          <Link to="/events">❮ Previous</Link>
+        </Button>
+        <Button variant="success">
+          <Link to="/list">Next ❯</Link>
+        </Button>
       </div>
     </div>
   );

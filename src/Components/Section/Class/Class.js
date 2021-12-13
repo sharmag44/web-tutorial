@@ -1,6 +1,8 @@
 import React from "react";
 import Code from "../../Code/Code";
 import "./Class.css";
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 function Class() {
   return (
     <div className="Class">
@@ -39,6 +41,15 @@ function Class() {
       <div className="Code__all">
         {" "}
         <Code data="ReactDOM.render(<Car />, document.getElementById('root'));" />
+      </div>
+      <div className="bottom_button">
+        <Button variant="success">
+          <Link to="/component">❮ Previous</Link>
+        </Button>
+
+        <Button variant="success">
+          <Link to="/props">Next ❯</Link>
+        </Button>
       </div>
     </div>
   );

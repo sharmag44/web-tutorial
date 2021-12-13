@@ -1,6 +1,8 @@
 import React from "react";
 import Code from "../../Code/Code";
 import "./Props.css";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 function Props() {
   return (
     <div className="Props">
@@ -43,6 +45,15 @@ function Props() {
         <Code data=");" />
         <Code data="}" />
         <Code data="ReactDOM.render(<Garage />, document.getElementById('root'));" />
+      </div>
+      <div className="bottom_button">
+        <Button variant="success">
+          <Link to="/class">❮ Previous</Link>
+        </Button>
+
+        <Button variant="success">
+          <Link to="/events">Next ❯</Link>
+        </Button>
       </div>
     </div>
   );
