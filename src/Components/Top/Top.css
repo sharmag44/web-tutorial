@@ -20,7 +20,7 @@ a {
 }
 
 #loading {
-  animation: rotation 25s infinite linear;
+  animation: rotation 28s infinite linear;
 }
 
 @keyframes rotation {
